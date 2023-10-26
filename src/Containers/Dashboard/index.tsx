@@ -36,7 +36,7 @@ const Dashboard: React.FC = () => {
 			throw error;
 		}
 	};
-	const apiUrl = "https://odd-tan-bunny-tutu.cyclic.app/todo";
+	const apiUrl = "https://odd-tan-bunny-tutu.cyclic.app/todo/";
 	const [data, setData] = useState<DataType[]>([]);
 	console.log(data);
 

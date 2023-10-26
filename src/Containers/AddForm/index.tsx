@@ -31,9 +31,13 @@ const AddForm = () => {
 
 	const addFormItem = async (values: FormData) => {
 		try {
-			await axios.post("http://localhost:3000/todo", values, {
-				withCredentials: true,
-			});
+			await axios.post(
+				"https://moonlit-jelly-3e4e08.netlify.app/todo",
+				values,
+				{
+					withCredentials: true,
+				}
+			);
 			Swal.fire({
 				icon: "success",
 				title: "Add To Do List Success",

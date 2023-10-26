@@ -24,7 +24,7 @@ const Dashboard: React.FC = () => {
 	const handleLogout = async () => {
 		try {
 			await axios.post(
-				"http://localhost:3000/user/logout",
+				"https://moonlit-jelly-3e4e08.netlify.app/user/logout",
 				{},
 				{
 					withCredentials: true,
@@ -36,7 +36,7 @@ const Dashboard: React.FC = () => {
 			throw error;
 		}
 	};
-	const apiUrl = "http://localhost:3000/todo";
+	const apiUrl = "https://moonlit-jelly-3e4e08.netlify.app/todo";
 	const [data, setData] = useState<DataType[]>([]);
 	console.log(data);
 
@@ -112,7 +112,7 @@ const Dashboard: React.FC = () => {
 		},
 	];
 	const deleteItem = async (deleted: string) => {
-		const apiUrl = `http://localhost:3000/todo/${deleted}`;
+		const apiUrl = `https://moonlit-jelly-3e4e08.netlify.app/todo/${deleted}`;
 		try {
 			await axios.delete(apiUrl, {
 				withCredentials: true,

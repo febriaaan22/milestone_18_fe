@@ -33,7 +33,7 @@ const RegisterForm: React.FC = () => {
 	const navigate = useNavigate();
 
 	const handleSubmit = (values: RegisterPage) => {
-		fetch("http://localhost:3000/user/register", {
+		fetch("https://moonlit-jelly-3e4e08.netlify.app/user/register", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

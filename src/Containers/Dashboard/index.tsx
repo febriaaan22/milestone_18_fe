@@ -10,7 +10,7 @@ interface DataType {
 	_id: string;
 	title: string;
 	progress: string;
-	date: string;
+	date: Date;
 	// is_active: string | number | boolean;
 }
 

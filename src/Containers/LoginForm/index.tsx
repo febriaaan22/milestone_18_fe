@@ -35,7 +35,7 @@ const LoginForm: React.FC = () => {
 
 		try {
 			const response = await axios.post(
-				"https://moonlit-jelly-3e4e08.netlify.app/user/login",
+				"https://odd-tan-bunny-tutu.cyclic.app/user/login",
 
 				body,
 

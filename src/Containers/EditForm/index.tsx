@@ -23,7 +23,7 @@ const EditForm: React.FC = () => {
 				...values,
 			};
 			const response = await axios.put(
-				`https://moonlit-jelly-3e4e08.netlify.app/todo/${id}`,
+				`https://odd-tan-bunny-tutu.cyclic.app/todo/${id}`,
 				body,
 				{
 					withCredentials: true,

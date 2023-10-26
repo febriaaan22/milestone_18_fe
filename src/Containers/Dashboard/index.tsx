@@ -47,7 +47,7 @@ const Dashboard: React.FC = () => {
 					withCredentials: true,
 				});
 				// console.log(response.data);
-				setData(response.data.todo);
+				setData(response.data.todos);
 			} catch (error) {
 				console.error(error);
 			}

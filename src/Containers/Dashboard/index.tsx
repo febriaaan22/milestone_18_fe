@@ -103,18 +103,18 @@ const Dashboard: React.FC = () => {
 				{ text: "High", value: "High" },
 			],
 			onFilter: (value, record) => record.priority === value,
-			render: (progress) => (
+			render: (priority) => (
 				<span
 					style={{
 						color:
-							progress === "Low"
+							priority === "Low"
 								? "green"
-								: progress === "Medium"
+								: priority === "Medium"
 								? "yellow"
 								: "red",
 					}}
 				>
-					{progress}
+					{priority}
 				</span>
 			),
 		},

@@ -8,6 +8,7 @@ const { Option } = Select;
 
 interface EditData {
 	progress: string;
+	priority: string;
 	Date: Date | null;
 }
 
@@ -65,6 +66,14 @@ const EditForm: React.FC = () => {
 						<Option value="Not Started">Not Started</Option>
 						<Option value="On Progress">On Progress</Option>
 						<Option value="Done">Done</Option>
+					</Select>
+				</Form.Item>
+
+				<Form.Item name="priority" rules={[{ required: true }]}>
+					<Select placeholder="Choose Priority" allowClear>
+						<Option value="Low">Low</Option>
+						<Option value="Medium">Medium</Option>
+						<Option value="High">High</Option>
 					</Select>
 				</Form.Item>
 

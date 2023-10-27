@@ -83,9 +83,9 @@ const AddForm = () => {
 
 				<Form.Item name="priority" rules={[{ required: true }]}>
 					<Select placeholder="Priority" allowClear>
-						<Option value="Not Started">Low</Option>
-						<Option value="On Progress">Medium</Option>
-						<Option value="Done">High</Option>
+						<Option value="Low">Low</Option>
+						<Option value="Medium">Medium</Option>
+						<Option value="High">High</Option>
 					</Select>
 				</Form.Item>
 

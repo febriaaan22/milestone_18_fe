@@ -10,18 +10,21 @@ const { Option } = Select;
 interface FormData {
 	title?: string;
 	progress?: string;
+	priority?: string;
 	date?: Date | null;
 }
 
 const initialValues = {
 	title: "",
 	progress: "",
+	priority: "",
 	// date: "",
 };
 
 const validationSchema = yup.object().shape({
 	title: yup.string().required("Title is required"),
 	progress: yup.string().required("Filled the Progress"),
+	priority: yup.string().required("Choose the Priority"),
 	// createdBy: yup.string().required("Mixer is required"),
 });
 

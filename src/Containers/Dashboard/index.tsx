@@ -10,6 +10,7 @@ interface DataType {
 	_id: string;
 	title: string;
 	progress: string;
+	priority: string;
 	date: Date;
 	// is_active: string | number | boolean;
 }
@@ -101,7 +102,7 @@ const Dashboard: React.FC = () => {
 				{ text: "Medium", value: "Medium" },
 				{ text: "High", value: "High" },
 			],
-			onFilter: (value, record) => record.progress === value,
+			onFilter: (value, record) => record.priority === value,
 			render: (progress) => (
 				<span
 					style={{

@@ -121,9 +121,9 @@ const Dashboard: React.FC = () => {
 				top: 100,
 			});
 			message.success("To Do List Deleted!");
-			setTimeout(() => {
-				window.location.reload();
-			}, 1250);
+			// setTimeout(() => {
+			// 	window.location.reload();
+			// }, 1250);
 		} catch (error) {
 			console.error(error);
 			throw error;

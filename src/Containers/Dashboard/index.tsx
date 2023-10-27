@@ -93,6 +93,31 @@ const Dashboard: React.FC = () => {
 			),
 		},
 		{
+			title: "Priority",
+			dataIndex: "priority",
+			key: "priority",
+			filters: [
+				{ text: "Low", value: "Low" },
+				{ text: "Medium", value: "Medium" },
+				{ text: "High", value: "High" },
+			],
+			onFilter: (value, record) => record.progress === value,
+			render: (progress) => (
+				<span
+					style={{
+						color:
+							progress === "Low"
+								? "green"
+								: progress === "Medium"
+								? "yellow"
+								: "red",
+					}}
+				>
+					{progress}
+				</span>
+			),
+		},
+		{
 			title: "Deadline",
 			dataIndex: "date",
 			key: "date",

@@ -78,6 +78,14 @@ const AddForm = () => {
 					</Select>
 				</Form.Item>
 
+				<Form.Item name="priority" rules={[{ required: true }]}>
+					<Select placeholder="Priority" allowClear>
+						<Option value="Not Started">Low</Option>
+						<Option value="On Progress">Medium</Option>
+						<Option value="Done">High</Option>
+					</Select>
+				</Form.Item>
+
 				<Form.Item name="date" label="Deadline" rules={[{ required: true }]}>
 					<DatePicker format="YYYY-MM-DD" />
 				</Form.Item>
